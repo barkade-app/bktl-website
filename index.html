@@ -12,179 +12,47 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2305070d'/%3E%3Cpath d='M8 13h22l-4 38H4z' fill='%23ff3347'/%3E%3Cpath d='M34 13h22l-6 38H28z' fill='%2335d7ff'/%3E%3Ctext x='12' y='43' font-family='Arial' font-size='27' font-weight='900' fill='white'%3EBK%3C/text%3E%3C/svg%3E"
     />
+    <link rel="preload" href="assets/bk-tech-labs-logo.png" as="image" />
     <link rel="preload" href="assets/bk-tech-labs-hero.png" as="image" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="BK Tech Labs home">
-        <span class="brand-mark" aria-hidden="true">
-          <span>B</span><span>K</span>
-        </span>
-        <span class="brand-text">
-          <strong>BK</strong>
-          <span>Tech Labs</span>
-        </span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="nav-toggle-line"></span>
-        <span class="nav-toggle-line"></span>
-        <span class="nav-toggle-line"></span>
-        <span class="sr-only">Open navigation</span>
-      </button>
-
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#mission">Mission</a>
-        <a href="#products">Products</a>
-        <a href="#collective">Collective</a>
-        <a class="nav-cta" href="mailto:hello@bktechlabs.com">Contact</a>
+        <a class="nav-logo-link brief-nav-logo" href="#top" aria-label="Brief">
+          <img src="assets/brief-nav-logo.png" alt="" />
+        </a>
+        <a class="nav-logo-link rechat-nav-logo" href="#top" aria-label="ReChat">
+          <img src="assets/rechat-logo.png" alt="" />
+        </a>
+        <a class="nav-logo-link" href="#top" aria-label="BarKade">
+          <img src="assets/barkade-logo.png" alt="" />
+        </a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <img
-          class="hero-image"
-          src="assets/bk-tech-labs-hero.png"
-          alt="Futuristic product visual combining board-game reasoning analysis with shared AI conversation feeds."
-        />
-        <div class="hero-overlay"></div>
-
         <div class="hero-content">
-          <p class="motto">Collective = Artificial + Natural</p>
-          <h1 id="hero-title">BK Tech Labs</h1>
-          <p class="hero-copy">
-            We build AI-native products that make reasoning visible, conversational, and
-            collectively improvable.
-          </p>
-          <p class="slogan">The End of gatekeeping intelligence</p>
-
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#products">Explore products</a>
-            <a class="button secondary" href="#mission">Read the mission</a>
-          </div>
-        </div>
-
-        <div class="hero-status" aria-label="Company focus areas">
-          <span>Reasoning evaluation</span>
-          <span>Shared AI conversations</span>
-          <span>Open collective intelligence</span>
-        </div>
-      </section>
-
-      <section class="section equation-band" id="mission" aria-labelledby="mission-title">
-        <div class="section-inner equation-layout">
-          <div>
-            <p class="eyebrow">Mission</p>
-            <h2 id="mission-title">Build better ways to understand reasoning.</h2>
-          </div>
-          <p>
-            Intelligence should not be hidden behind leaderboards, private prompts, or
-            one-off demos. BK Tech Labs turns decisions into artifacts people can inspect,
-            compare, share, and improve.
-          </p>
-        </div>
-      </section>
-
-      <section class="section products" id="products" aria-labelledby="products-title">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="eyebrow">Products</p>
-            <h2 id="products-title">Two fronts in the same fight.</h2>
-            <p>
-              BarKade evaluates how minds reason. ReChat makes AI conversations easy to
-              publish, browse, and learn from.
-            </p>
-          </div>
-
-          <div class="product-grid">
-            <article class="product-card barkade">
-              <div class="product-copy">
-                <p class="product-label">Live</p>
-                <h3>BarKade</h3>
-                <p>
-                  A classic board-game platform for measuring how humans and AI systems
-                  make decisions under fixed rules, visible state, and reviewable choices.
-                </p>
-              </div>
-              <div class="product-visual game-visual" aria-hidden="true">
-                <div class="mini-board">
-                  <span></span><span></span><span></span><span></span>
-                  <span></span><span></span><span></span><span></span>
-                  <span></span><span></span><span></span><span></span>
-                  <span></span><span></span><span></span><span></span>
-                </div>
-                <div class="decision-path">
-                  <i></i><i></i><i></i>
-                </div>
-              </div>
-            </article>
-
-            <article class="product-card rechat">
-              <div class="product-copy">
-                <p class="product-label">In development</p>
-                <h3>ReChat</h3>
-                <p>
-                  A social platform for sharing AI conversations with a YouTube-like
-                  browsing experience built for discovery, context, and remixable insight.
-                </p>
-              </div>
-              <div class="product-visual feed-visual" aria-hidden="true">
-                <div class="feed-player">
-                  <span></span>
-                </div>
-                <div class="feed-row active"></div>
-                <div class="feed-row"></div>
-                <div class="feed-row short"></div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section collective" id="collective" aria-labelledby="collective-title">
-        <div class="section-inner">
-          <div class="section-heading compact">
-            <p class="eyebrow">Collective Intelligence</p>
-            <h2 id="collective-title">Artificial and natural intelligence belong in the same loop.</h2>
-          </div>
-
-          <div class="principle-grid">
-            <article>
-              <span class="principle-number">01</span>
-              <h3>Make reasoning observable</h3>
-              <p>Record the state, the options, the move, and the judgment around it.</p>
-            </article>
-            <article>
-              <span class="principle-number">02</span>
-              <h3>Make insight shareable</h3>
-              <p>Turn useful AI interactions into durable media people can revisit.</p>
-            </article>
-            <article>
-              <span class="principle-number">03</span>
-              <h3>Make progress collective</h3>
-              <p>Let humans and models learn from the same transparent feedback loops.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section closing" aria-labelledby="closing-title">
-        <div class="section-inner closing-inner">
-          <div>
-            <p class="eyebrow">BK Tech Labs</p>
-            <h2 id="closing-title">The End of gatekeeping intelligence.</h2>
-          </div>
-          <a class="button primary" href="mailto:hello@bktechlabs.com">Start a conversation</a>
+          <h1 id="hero-title" class="sr-only">BK Tech Labs</h1>
+          <img
+            class="hero-logo"
+            src="assets/bk-tech-labs-logo.png"
+            alt="BK Tech Labs"
+          />
+          <p class="hero-label">COLLECTIVE INTELLIGENCE</p>
+          <p class="motto">COLLECTIVE = ARTIFICIAL + NATURAL</p>
+          <p class="slogan">THE END OF GATEKEEPING INTELLIGENCE</p>
+          <a
+            class="member-button"
+            href="mailto:hello@bktechlabs.com?subject=Become%20a%20Member"
+          >
+            <img src="assets/member-logo.png" alt="" />
+            <span>Become a Member</span>
+          </a>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <p>&copy; 2026 BK Tech Labs</p>
-      <a href="#top">Back to top</a>
-    </footer>
 
     <script src="script.js"></script>
   </body>
