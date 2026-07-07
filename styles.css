@@ -195,7 +195,8 @@ img {
 }
 
 .hero .slogan,
-.hero .motto {
+.hero .motto,
+.hero .narrative {
   margin: 0;
   max-width: 640px;
   line-height: 1.08;
@@ -213,6 +214,12 @@ img {
 .hero .motto {
   color: var(--cyan);
   font-size: 1.25rem;
+  font-weight: 950;
+}
+
+.hero .narrative {
+  color: var(--red);
+  font-size: calc(1.25rem + 8pt);
   font-weight: 950;
 }
 
