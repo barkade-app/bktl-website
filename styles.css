@@ -734,7 +734,8 @@ img {
 }
 
 .savings-badge {
-  margin: -0.4rem 0 0;
+  display: inline-block;
+  margin: 1rem 0 0;
   padding: 0.45rem 0.6rem;
   border: 1px solid rgba(101, 242, 154, 0.45);
   color: #65f29a;
